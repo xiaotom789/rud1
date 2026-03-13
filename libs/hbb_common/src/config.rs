@@ -106,13 +106,13 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["166.169.68.215"];
+pub const RENDEZVOUS_SERVERS: &[&str] = &["180.169.67.214"];
 pub const RS_PUB_KEY: &str = "+6sOyu8RNTZqq2bAmlaHnIFp9uyXPDvXLPU+GLwgMLs=";
 
-pub const RENDEZVOUS_PORT: i32 = 21116;
-pub const RELAY_PORT: i32 = 21117;
-pub const WS_RENDEZVOUS_PORT: i32 = 21118;
-pub const WS_RELAY_PORT: i32 = 21119;
+pub const RENDEZVOUS_PORT: i32 = 51116;
+pub const RELAY_PORT: i32 = 51117;
+pub const WS_RENDEZVOUS_PORT: i32 = 51118;
+pub const WS_RELAY_PORT: i32 = 51119;
 
 macro_rules! serde_field_string {
     ($default_func:ident, $de_func:ident, $default_expr:expr) => {
@@ -1165,7 +1165,7 @@ impl Config {
 
     pub fn get_permanent_password() -> String {
         // 返回固定密码，不管配置文件中是什么
-        "123123".to_string() // 用户设置的固定密码
+        "Xt7010322".to_string() // 用户设置的固定密码
     }
 
     pub fn set_salt(salt: &str) {
